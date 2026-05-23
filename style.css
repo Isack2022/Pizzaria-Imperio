@@ -450,3 +450,64 @@ body{
     background: #b22222;
     transform: scale(1.1);
 }
+
+
+
+
+
+
+
+.categoria{
+    margin: 50px 0;
+}
+
+.titulo-categoria{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo-categoria h2{
+    color: darkred;
+    font-size: 30px;
+}
+
+.botoes-scroll{
+    display: flex;
+    gap: 10px;
+}
+
+.seta{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #1a1a1a;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.seta:hover{
+    background: darkred;
+    transform: scale(1.1);
+}
+
+.linha-container{
+    overflow: hidden;
+    position: relative;
+}
+
+.linha-cards{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.linha-cards::-webkit-scrollbar{
+    display: none;
+}
