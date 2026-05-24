@@ -2,11 +2,11 @@
 // BOAS-VINDAS
 // ======================
 
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        alert('🍕 Bem-vindo à Pizzaria Império!');
-    }, 500);
-});
+// window.addEventListener('load', () => {
+//     setTimeout(() => {
+//         alert('🍕 Bem-vindo à Pizzaria Império!');
+//     }, 500);
+// });
 
 
 // ======================

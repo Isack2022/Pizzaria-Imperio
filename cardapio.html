@@ -3,30 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio - Sr. do Império</title>
+    <title>Sr. do Império - Cardápio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/cardapio.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
 </head>
 <body>
 
     <!-- HEADER -->
-
+        <!-- HEADER -->
     <header class="header">
-        <h1>🍕 Cardápio - Sr. do Império</h1>
+
+        <!-- SOBRE NÓS -->
+        <div class="topo">
+            <img src="imagens/logo.png" alt="Logo da pizzaria">
+            <h1>Cardápio - Sr. do Império</h1>
+        </div>
+
+        <!-- BOTÕES -->
+        <div class="header-buttons">
+            <a href="cardapio.html">
+                <button><i class="fa-solid fa-utensils"></i></i> Cardápio</button>
+            </a>
+            <a href="login.html">
+                <button><i class="fa-solid fa-user icon-login"></i> Entre ou Cadastre-se </button>
+            </a>
+        </div>
+
     </header>
+
+  
 
     <!-- PIZZAS SALGADAS -->
 
     <section class="categoria">
 
-        <div class="titulo-categoria">
-    <h2>🍕 Pizzas Salgadas</h2>
-
-    <div class="botoes-scroll">
-        <button class="seta esquerda">&#10094;</button>
-        <button class="seta direita">&#10095;</button>
+    <div class="titulo-categoria">
+        <h2>🍕 Pizzas Salgadas</h2>
+        <div class="botoes-scroll">
+            <button class="seta esquerda">&#10094;</button>
+            <button class="seta direita">&#10095;</button>
+        </div>
     </div>
-</div>
 
 
            <div class="linha-container">
@@ -482,12 +500,55 @@
     </section>
 
     <!-- FOOTER -->
-
     <footer class="footer">
-        <p>© 2025 Sr. do Império - Todos os direitos reservados</p>
+
+        <!-- PARCERIAS -->
+        <div class="footer-box">
+            <h3>Parcerias</h3>
+            <a href="https://www.formaggini.com.br/">
+                <p>Formaggini</p>
+            </a>
+            <a href="https://centralmbrf.com.br/">
+                <p>BRF (Sadia/Perdigão)</p>
+            </a>
+            <a href="https://www.gvinah.com.br/">
+                <p>GVINAH</p>
+            </a>
+        </div>
+
+        <!-- CONTATO -->
+        <div class="footer-box">
+            <h3>Contato</h3>
+            <p><i class="fa-solid fa-map-pin"></i> Av. Campanella, 1709 - Itaquera, São Paulo - SP, 08220-831</p>
+            <p><i class="fa-solid fa-phone"></i> (11) 2071-3600</p>
+        </div>
+
+        <!-- REDES SOCIAIS -->
+        <div class="footer-box">
+            <h3>Redes Sociais</h3>
+            <a href="https://www.instagram.com/senhordo_imperio/">
+                <p> <i class="fa-brands fa-instagram"></i> Instagram</p>
+            </a>
+            <a href="https://www.facebook.com/pizzariaimperioo?locale=pt_BR">
+                <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+            </a>
+            <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/pizzaria-senhor-do-imperio-jardim-itapemirim/b42eccf1-25ac-4f9b-9725-1b6196f6719b">
+                <p><i class="fa-solid fa-pizza-slice"></i> Ifood</p>
+            </a>
+        </div>
+
     </footer>
 
+
+
+
+    <!-- RODAPÉ FINAL -->
+    <div class="rodape">
+        <p>© 2025 Pizzaria Império - Todos os direitos reservados.</p>
+    </div>
+
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3814eee1f6.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

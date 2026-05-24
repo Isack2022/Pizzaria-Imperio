@@ -6,7 +6,8 @@
 
     <title>Pizzaria Império</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -20,14 +21,17 @@
 
         <!-- SOBRE NÓS -->
         <nav class="menu-central">
-            <a href="#">Sobre Nós</a>
+            Sobre Nós
         </nav>
 
         <!-- BOTÕES -->
         <div class="header-buttons">
-            <button><a href="cardapio.html">Cardápio</a></button>
-            <button>Login</button>
-            <button>Cadastro</button>
+            <a href="cardapio.html">
+                <button><i class="fa-solid fa-utensils"></i></i> Cardápio</button>
+            </a>
+            <a href="login.html">
+                <button><i class="fa-solid fa-user icon-login"></i> Entre ou Cadastre-se </button>
+            </a>
         </div>
 
     </header>
@@ -39,24 +43,25 @@
         <!-- PRIMEIRA SEÇÃO -->
         <section class="hero">
 
-    <div class="texto-hero">
-        <h1>A Melhor Pizza da Cidade 🍕</h1>
+            <div class="texto-hero">
+                <h1>A Melhor Pizza de Itaquera 🍕</h1>
 
-        <p>
-            Sabor, qualidade e tradição em cada fatia.
-            Conheça nossa pizzaria e experimente receitas incríveis.
-        </p>
+                <p>
+                    Sabor, qualidade e tradição em cada fatia. Conheça nossa pizzaria e experimente receitas incríveis.
+                </p>
 
-        <button>Ver Cardápio</button>
-    </div>
+                <a href="cardapio.html">
+                    <button>Ver Cardápio</button>
+                </a>
+            </div>
 
-    <div class="imagem-hero">
-        <video controls autoplay muted loop>
-            <source src="Imagens/pizza-banner.mp4" type="video/mp4">
-        </video>
-    </div>
+            <div class="imagem-hero">
+                <video controls autoplay muted loop style="pointer-events: none">
+                    <source src="Imagens/pizza-banner.mp4" type="video/mp4">
+                </video>
+            </div>
 
-</section>
+        </section>
 
 
         <!-- SEGUNDA SEÇÃO -->
@@ -64,8 +69,8 @@
 
             <!-- IMAGEM ESQUERDA -->
             <div class="midia">
-                <video controls autoplay muted loop>
-            <source src="Imagens/11991-233836102.mp4" type="video/mp4">
+                <video controls autoplay muted loop style="pointer-events: none">
+                    <source src="Imagens/11991-233836102.mp4" type="video/mp4">
                 </video>
             </div>
 
@@ -74,9 +79,7 @@
                 <h2>Sobre Nossa Empresa</h2>
 
                 <p>
-                    Somos uma pizzaria dedicada a trazer
-                    sabores únicos, ingredientes frescos
-                    e um ambiente acolhedor para todos.
+                    Pizzaria senhor do império fundado pelo proprietário Sr Valter e fazemos com amor é ótima qualidade preço justo.
                 </p>
             </div>
 
@@ -91,16 +94,14 @@
                 <h2>Ingredientes de Qualidade</h2>
 
                 <p>
-                    Trabalhamos com ingredientes selecionados
-                    para garantir uma pizza deliciosa
-                    e inesquecível.
+                    Trabalhamos com ingredientes selecionados para garantir uma pizza deliciosae e inesquecível.
                 </p>
             </div>
 
             <!-- IMAGEM DIREITA -->
             <div class="midia">
-                <video controls autoplay muted loop>
-            <source src="Imagens/156878-813735363.mp4" type="video/mp4">
+                <video controls autoplay muted loop style="pointer-events: none">
+                    <source src="Imagens/156878-813735363.mp4" type="video/mp4">
                 </video>
             </div>
 
@@ -115,25 +116,36 @@
         <!-- PARCERIAS -->
         <div class="footer-box">
             <h3>Parcerias</h3>
-            <p>Formaggini</p>
-            <p>BRF (Sadia/Perdigão)</p>
-            <p>GVINAH</p>
+            <a href="https://www.formaggini.com.br/">
+                <p>Formaggini</p>
+            </a>
+            <a href="https://centralmbrf.com.br/">
+                <p>BRF (Sadia/Perdigão)</p>
+            </a>
+            <a href="https://www.gvinah.com.br/">
+                <p>GVINAH</p>
+            </a>
         </div>
 
         <!-- CONTATO -->
         <div class="footer-box">
             <h3>Contato</h3>
-            <p>📍 Rua Albuquerque, 321</p>
-            <p>📞 (11) 99999-9999</p>
+            <p><i class="fa-solid fa-map-pin"></i> Av. Campanella, 1709 - Itaquera, São Paulo - SP, 08220-831</p>
+            <p><i class="fa-solid fa-phone"></i> (11) 2071-3600</p>
         </div>
 
         <!-- REDES SOCIAIS -->
         <div class="footer-box">
             <h3>Redes Sociais</h3>
-            <p>Instagram</p>
-            
-            <p>Facebook</p>
-            <p>TikTok</p>
+            <a href="https://www.instagram.com/senhordo_imperio/">
+                <p> <i class="fa-brands fa-instagram"></i> Instagram</p>
+            </a>
+            <a href="https://www.facebook.com/pizzariaimperioo?locale=pt_BR">
+                <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+            </a>
+            <a href="https://www.ifood.com.br/delivery/sao-paulo-sp/pizzaria-senhor-do-imperio-jardim-itapemirim/b42eccf1-25ac-4f9b-9725-1b6196f6719b">
+                <p><i class="fa-solid fa-pizza-slice"></i> Ifood</p>
+            </a>
         </div>
 
     </footer>
@@ -147,6 +159,6 @@
     </div>
 
     <script src="js/script.js"></script>
-
+    <script src="https://kit.fontawesome.com/3814eee1f6.js" crossorigin="anonymous"></script>
 </body>
 </html>
