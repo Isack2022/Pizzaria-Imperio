@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Império - Avaliação</title>
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/avaliacao.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo da pizzaria">
+        </div>
+
+        <!-- BOTÕES -->
+        <div class="header-buttons">
+            <a href="index.html">
+                <button><i class="fa-solid fa-house"></i> Home</button>
+            </a>
+            <a href="cardapio.html">
+                <button><i class="fa-solid fa-utensils"></i></i> Cardápio</button>
+            </a>
+        </div>
+
+    </header>
+
+    <!-- Conteúdo main -->
+    <main>
+        <!-- Formulário de avaliação -->
+        <div class="container-form">
+            <form onsubmit="return false" id="formAvaliacao">
+                <h1>Avaliação</h1>
+                <div class="input-box">
+                    <div class="avaliacao">
+                        <span class="estrela">★</span>
+                        <span class="estrela">★</span>
+                        <span class="estrela">★</span>
+                        <span class="estrela">★</span>
+                        <span class="estrela">★</span>
+                    </div>
+                </div>
+                <p id="nota-text">Nota: 0</p>
+                <p><i class="fa-solid fa-comment icon"></i>Comentário:</p>
+                <div class="input-box">
+                    <textarea name="caixa de avaliacao" id="comentario" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </main>
+
+
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <!-- PARCERIAS -->
+        <div class="footer-box">
+            <h3>Parcerias</h3>
+            <a href="https://www.formaggini.com.br/">
+                <p>Formaggini</p>
+            </a>
+            <a href="https://centralmbrf.com.br/">
+                <p>BRF (Sadia/Perdigão)</p>
+            </a>
+            <a href="https://www.gvinah.com.br/">
+                <p>GVINAH</p>
+            </a>
+        </div>
+
+        <!-- CONTATO -->
+        <div class="footer-box">
+            <h3>Contato</h3>
+            <p><i class="fa-solid fa-map-pin"></i> Av. Campanella, 1709 - Itaquera, São Paulo - SP, 08220-831</p>
+            <p><i class="fa-solid fa-phone"></i> (11) 2071-3600</p>
+        </div>
+
+        <!-- REDES SOCIAIS -->
+        <div class="footer-box">
+            <h3>Redes Sociais</h3>
+            <a href="https://www.instagram.com/senhordo_imperio/">
+                <p> <i class="fa-brands fa-instagram"></i> Instagram</p>
+            </a>
+            <a href="https://www.facebook.com/pizzariaimperioo?locale=pt_BR">
+                <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+            </a>
+        </div>
+
+    </footer>
+
+    <!-- RODAPÉ FINAL -->
+    <div class="rodape">
+        <p>© 2025 Pizzaria Império - Todos os direitos reservados.</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/3814eee1f6.js" crossorigin="anonymous"></script>
+    <script src="js/avaliacao.js"></script>
+</body>
+</html>

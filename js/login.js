@@ -159,7 +159,7 @@ async function cadastro(){
 
             alert("Cadastro  realizado com sucesso! ");
         }else{
-            alert("Erro ao cadastra.")
+            alert("Erro ao cadastra.");
         }
     }catch(error){
        console.error(`Não foi possível requisitar a API -> ${error}`);

@@ -1,5 +1,6 @@
 main{
     display: flex;
+    flex-direction: column;
     gap: 20px;
     padding: 40px;
     width: 100%;
@@ -13,11 +14,6 @@ main{
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 4px 10px #00000033;
-    transition: 0.3s;
-}
-
-.container-form:hover{
-    transform: translateY(-5px);
 }
 
 
@@ -34,7 +30,7 @@ main{
     font-size: 40px;
 }
 
-.container-form input:focus{
+.container-form textarea:focus{
     box-shadow: 0 0 10px #7a000080;
 }
 
@@ -45,7 +41,6 @@ main{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-
 }
 
 /* ÍCONE */
@@ -74,31 +69,51 @@ main{
 }
 
 /* INPUT */
-.input-box input{
+.input-box textarea{
     width: 100%;
     padding: 14px 14px 14px 45px;
     border: none;
     border-radius: 10px;
     outline: none;
+    resize: none;
     font-size: 16px;
     background: #fffffff2;
+    height: 200px;
 }
-
 
 .container-form p{
     margin-bottom: 20px;
-}
-
-.container-form p a{
     color: #7a0000;
-    text-decoration: none;
     font-weight: bold;
 }
 
-.container-form p a:hover{
-    text-decoration: underline;
+/* Estrelas */
+
+.avaliacao{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+
 }
 
+.estrela{
+    font-size: 30px;
+    color: #000;
+    transition: 0.2s;
+
+}
+
+/* Estrela inteira */
+.estrela.cheia{
+    color: gold;
+}
+
+/* Meia estrela */
+.estrela.meia{
+    background: linear-gradient(90deg,gold 50%,black 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Botão */
 
@@ -118,19 +133,4 @@ main{
 .container-form button:hover{
     background: #550000;
     transform: scale(1.02);
-}
-
-/* RESPONSIVO */
-
-@media(max-width: 900px){
-
-    main{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container-form{
-        margin: 30px 0px;
-    }
-
 }
