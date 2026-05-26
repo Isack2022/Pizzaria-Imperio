@@ -16,11 +16,14 @@ const texto = document.getElementById('nota-text');
 let nota = 0;
 
 estrelas.forEach((estrela, index) => {
-
+    // Verificando o click do mouse
     estrela.addEventListener('click', (event) => {
+        // Pegando a largura da estrela
         const largura = estrela.clientWidth;
+        // Pegando o click do mouse
         const cliqueX = event.offsetX;
 
+        // Se estiver para esquerda é meio, mas se não estiver é 1
         if(cliqueX < largura / 2){
             nota = index + 0.5;
         }else{
@@ -33,11 +36,14 @@ estrelas.forEach((estrela, index) => {
 function atualizarEstrelas(){
 
     estrelas.forEach((estrela, index) => {
+        // Verificando se a estrela vai ser cheia ou meia
         estrela.classList.remove('cheia','meia');
         const numero = index + 1;
         if(numero <= nota){
             estrela.classList.add('cheia');
-        }else if(numero - 0.5 === nota){
+        }
+        // Se a nota tive o valor meio(0,5) vai ser a estrela meia
+        else if(numero - 0.5 === nota){
             estrela.classList.add('meia');
         }
     });
@@ -59,7 +65,7 @@ async function avaliacao(){
     try{
         // Chamando api do Node.js
         const resposta = await fetch(
-            "http://127.0.0.1:3000/avaliacao",
+            "https://node-pizzaria.onrender.com/avaliacao",
             {
                 method: "POST",
                 headers:{

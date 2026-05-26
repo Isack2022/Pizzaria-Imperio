@@ -70,7 +70,7 @@ async function login(){
     try{
          // Chamando api do Node.js
         const resposta = await fetch(
-            "http://127.0.0.1:3000/cliente/login",
+            "https://node-pizzaria.onrender.com/cliente/login",
             {
                 method: "POST",
                 headers:{
@@ -130,7 +130,7 @@ async function cadastro(){
     try{
          // Chamando api do Node.js
         const resposta = await fetch(
-            "http://127.0.0.1:3000/cliente/",
+            "https://node-pizzaria.onrender.com/cliente",
             {
                 method: "POST",
                 headers:{
