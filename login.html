@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Império - Login</title>
+
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER -->
@@ -29,7 +34,61 @@
     </header>
 
     <!-- Conteúdo main -->
+    <main>
+        <!-- Formulário de Login -->
+        <div class="container-form">
+            <form onsubmit="return false" id="formLogin">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <input type="email" name="Email Login" placeholder="Email" id="email-Login" autocomplete="off">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <i class="fa-solid fa-eye-slash icon-eye"></i>
+                    <input type="password" name="senha" placeholder="Senha" id="senha-Login" autocomplete="off">
+                </div>
+                <p><a href="recuperar-senha.html"> <i class="fa-solid fa-unlock icon"></i>Esqueci minha senha</a></p>
+                <button id="login">
+                    Continuar
+                </button>
+            </form>
+        </div>
 
+        <!-- Formulário de Login -->
+        <div class="container-form">
+            <form onsubmit="return false" id="formCadastro">
+                <h1>Cadastro</h1>
+                <div class="input-box">
+                    <i class="fa-solid fa-circle-user icon"></i>
+                    <input type="text" name="nome" id="nome-Cadastro" placeholder="Nome" autocomplete="off">
+                </div>
+                 <div class="input-box">
+                    <i class="fa-solid fa-envelope icon"></i>
+                    <input type="email" name="Email cadastro" id="email-Cadastro" placeholder=" Email" autocomplete="off">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <input type="tel" name="telefone" id="telefone-Cadastro" placeholder="11999999999" autocomplete="off">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <i class="fa-solid fa-eye-slash icon-eye"></i>
+                    <input type="password" name="senha" id="senha1-Cadastro" placeholder="Senha" autocomplete="off">
+                </div>
+                
+                <div class="input-box">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <i class="fa-solid fa-eye-slash icon-eye"></i>
+                   <input type="password" name="Confirmação de senha" id="senha2-Cadastro" placeholder="Confirmação de senha">
+                </div>
+
+                <button id="cadastrar">
+                    Cadastrar
+                </button>
+            </form>
+        </div>
+    </main>
 
 
     
@@ -75,7 +134,7 @@
         <p>© 2025 Pizzaria Império - Todos os direitos reservados.</p>
     </div>
 
-
+    <script src="js/login.js"></script>
     <script src="https://kit.fontawesome.com/3814eee1f6.js" crossorigin="anonymous"></script>
 </body>
 </html>

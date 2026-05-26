@@ -1,0 +1,120 @@
+main{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    width: 100%;
+    min-height: 70vh;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.container-form{
+    background: linear-gradient(to bottom, #fff7cc, #f4d35e);
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px #00000033;
+    transition: 0.3s;
+}
+
+.container-form:hover{
+    transform: translateY(-5px);
+}
+
+
+/* Formulário */
+
+.container-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form h1{
+    color: #7a0000;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
+.container-form input:focus{
+    box-shadow: 0 0 10px #7a000080;
+}
+
+
+/* INPUT */
+.input-box{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* ÍCONE */
+.input-box .icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon{
+    color: #7a0000;
+    font-size: 16px;
+}
+
+.icon-eye{
+    color: #7a0000;
+    font-size: 16px;
+}
+
+.icon-eye{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #7a0000;
+}
+
+/* INPUT */
+.input-box input{
+    width: 100%;
+    padding: 14px 14px 14px 45px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    background: #fffffff2;
+}
+
+
+.container-form p{
+    margin-bottom: 20px;
+}
+
+.container-form p a{
+    color: #7a0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container-form p a:hover{
+    text-decoration: underline;
+}
+
+
+/* Botão */
+
+.container-form button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #7a0000;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container-form button:hover{
+    background: #550000;
+    transform: scale(1.02);
+}
