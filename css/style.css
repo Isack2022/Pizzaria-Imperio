@@ -1,93 +1,8 @@
-/* RESET */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* BODY */
-
-body{
-    background: linear-gradient(to bottom, #f8f1e7, #f3e3cf);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
-/* HEADER */
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 20px 60px;
-
-    background-color: #a30000;
-
-    color: white;
-}
-
-/* LOGO */
-
-.logo img{
-    height: 120px;
-    width: 120px;
-}
-
-/* MENU CENTRAL */
-
-.menu-central a{
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.menu-central a:hover{
-    color: #ffd700;
-}
-
-/* BOTÕES */
-
-.header-buttons{
-    display: flex;
-    gap: 15px;
-}
-
-.header-buttons button{
-    padding: 12px 22px;
-
-    border: none;
-    border-radius: 10px;
-
-    background-color: #ffcc00;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.header-buttons button:hover{
-    transform: scale(1.08);
-
-    background-color: #ffdb4d;
-}
-
-
 /* MAIN */
 
 main{
     width: 100%;
 }
-
 
 /* SEÇÕES */
 
@@ -95,11 +10,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 60px;
-
     padding: 80px 10%;
-
     min-height: 80vh;
 }
 
@@ -118,47 +30,15 @@ main{
 }
 
 
-/* TEXTO */
-
-.texto{
-    flex: 1;
-}
-
-.texto h1{
-    font-size: 52px;
-
-    margin-bottom: 20px;
-
-    color: #a30000;
-}
-
-.texto h2{
-    font-size: 42px;
-
-    margin-bottom: 20px;
-
-    color: #a30000;
-}
-
-.texto p{
-    font-size: 20px;
-
-    line-height: 1.8;
-}
-
-
 /* IMAGENS/VÍDEO */
 
 .midia{
     flex: 1;
 }
 
-.midia img,
-.midia video{
+.midia img, .midia video{
     width: 100%;
-
     border-radius: 20px;
-
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
@@ -168,11 +48,8 @@ main{
 .footer{
     display: flex;
     justify-content: space-around;
-
     padding: 50px;
-
     background-color: #6d0000;
-
     color: white;
 }
 
@@ -205,62 +82,17 @@ main{
 
 .rodape{
     background-color: #3d0000;
-
     color: white;
-
     text-align: center;
-
     padding: 15px;
 }
 
-
-/* RESPONSIVO */
-
-@media(max-width: 900px){
-
-    .header{
-        flex-direction: column;
-        gap: 20px;
-
-        text-align: center;
-    }
-
-    .secao{
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-    .texto h1{
-        font-size: 38px;
-    }
-
-    .texto h2{
-        font-size: 32px;
-    }
-
-    .footer{
-        flex-direction: column;
-        gap: 30px;
-
-        text-align: center;
-    }
-}
-
 .logo {
-
     width: 60px;
-
     height: auto;
-
     margin-left: 10px;
-
     object-fit: contain;
 }
-
-
-
-
 
 .hero{
     display: flex;
@@ -314,6 +146,5 @@ main{
 .imagem-hero video{
     width: 900px;
     border-radius: 20px;
-
     box-shadow: 0 0 30px rgba(0,0,0,0.3);
 }
