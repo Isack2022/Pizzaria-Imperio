@@ -46,6 +46,7 @@ body{
     width: 120px;
 }
 
+
 /* MENU CENTRAL */
 
 .menu-central a{
@@ -163,10 +164,25 @@ body{
 
 @media(max-width: 900px){
 
+    
+    .logo{
+        width: 50%;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .header-buttons button{
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
     .header{
         flex-direction: column;
         gap: 20px;
-
         text-align: center;
     }
 

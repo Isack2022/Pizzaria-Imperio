@@ -97,7 +97,7 @@ async function avaliacao(){
             comentario.value = "";
             atualizarEstrelas();
 
-            alert("Obrigado pela avaliação! 😁");
+            alert("Obrigado pela sua avaliação! 😁");
             window.location.replace('index.html');
         }else{
             alert('Erro ao avaliar.');

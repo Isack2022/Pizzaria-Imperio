@@ -101,11 +101,11 @@ async function login(){
         }else{
             txtEmailLogin.value = "";
             txtSenhaLogin.value = "";
-            alert('Usuário ou senha incorretos');
+            alert('Usuário ou senha incorretos.');
         }
     }catch(error){
        console.error(`Não foi possível requisitar a API -> ${error}`);
-       alert("Não foi possível conectar com servidor.");
+       alert("Não foi possível conectar-se ao servidor.");
     }
 }
 
@@ -157,13 +157,13 @@ async function cadastro(){
             txtSenha1.value = "";
             txtSenha2.value = "";
 
-            alert("Cadastro  realizado com sucesso! ");
+            alert("Cadastro realizado com sucesso!");
         }else{
-            alert("Erro ao cadastra.");
+            alert("Erro ao cadastrar.");
         }
     }catch(error){
        console.error(`Não foi possível requisitar a API -> ${error}`);
-       alert("Não foi possível conectar com servidor.");
+       alert("Não foi possível conectar-se ao servidor.");
     }
 }
 
