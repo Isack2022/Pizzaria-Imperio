@@ -13,6 +13,17 @@ const comentario = document.getElementById('comentario');
 const estrelas = document.querySelectorAll('.estrela');
 const texto = document.getElementById('nota-text');
 
+
+// Tela de carregamento
+const loading = document.getElementById('loading');
+function mostrarLoading(){
+    loading.style.display = 'flex';
+}
+
+function esconderLoading(){
+    loading.style.display = 'none';
+}
+
 let nota = 0;
 
 estrelas.forEach((estrela, index) => {
@@ -63,6 +74,7 @@ async function avaliacao(){
     }
 
     try{
+        mostrarLoading();
         // Chamando api do Node.js
         const resposta = await fetch(
             "https://node-pizzaria.onrender.com/avaliacao",
@@ -106,6 +118,8 @@ async function avaliacao(){
     }catch(error){
        console.error(`Não foi possível requisitar a API -> ${error}`);
        alert("Não foi possível conectar com servidor.");
+    }finally{
+        esconderLoading();
     }
 }
 
