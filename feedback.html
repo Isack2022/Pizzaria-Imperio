@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Império - Feedbacks</title>
-    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/carregamento.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+
 </head>
 <body>
 
-     <!-- HEADER -->
+    <!-- Div de carregamento -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Carregando os feedbacks...</p>
+    </div>
+
+    <!-- HEADER -->
     <header class="header">
 
         <!-- LOGO -->
@@ -35,6 +43,12 @@
         </div>
 
     </header>
+
+    <main>
+        <div id="lista-avaliacoes"></div>
+    </main>
+
+
 
     <!-- FOOTER -->
     <footer class="footer">

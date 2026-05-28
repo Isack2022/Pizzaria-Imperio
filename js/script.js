@@ -1,15 +1,4 @@
 // ======================
-// BOAS-VINDAS
-// ======================
-
-// window.addEventListener('load', () => {
-//     setTimeout(() => {
-//         alert('🍕 Bem-vindo à Pizzaria Império!');
-//     }, 500);
-// });
-
-
-// ======================
 // SETAS DO CARDÁPIO
 // ======================
 

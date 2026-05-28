@@ -1,7 +1,7 @@
 // Pegando o token 
 const token = localStorage.getItem('token');
 
-// Casp não tenha o token e vai realocar para página
+// Casp não tenha o token e vai realocar para página de login
 if(!token){
     alert('Você precisa estar logado.');
     window.location.href = 'login.html';
