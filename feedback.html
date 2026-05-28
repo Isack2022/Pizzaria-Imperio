@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria Império</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Pizzaria Império - Feedbacks</title>
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/carregamento.css">
     <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+
 </head>
 <body>
+
+    <!-- Div de carregamento -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Carregando os feedbacks...</p>
+    </div>
 
     <!-- HEADER -->
     <header class="header">
@@ -36,82 +44,10 @@
 
     </header>
 
-
-    <!-- MAIN -->
     <main>
-
-        <!-- PRIMEIRA SEÇÃO -->
-        <section class="hero">
-
-            <div class="texto-hero">
-                <h1>A Melhor Pizza de Itaquera 🍕</h1>
-
-                <p>
-                    Sabor, qualidade e tradição em cada fatia. Conheça nossa pizzaria e experimente receitas incríveis.
-                </p>
-
-                <a href="cardapio.html">
-                    <button class="botao">Ver Cardápio</button>
-                </a>
-            </div>
-
-            <div class="imagem-hero">
-                <video controls autoplay muted loop style="pointer-events: none">
-                    <source src="imagens/pizza-banner.mp4" type="video/mp4">
-                </video>
-            </div>
-
-        </section>
-
-
-        <!-- SEGUNDA SEÇÃO -->
-        <section class="secao secao-2">
-
-            <!-- IMAGEM ESQUERDA -->
-            <div class="midia">
-                <video controls autoplay muted loop style="pointer-events: none">
-                    <source src="imagens/11991-233836102.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <!-- TEXTO DIREITA -->
-            <div class="texto">
-                <h2>Sobre Nossa Empresa</h2>
-
-                <p>
-                    Pizzaria senhor do império fundado pelo proprietário Sr Valter e fazemos com amor é ótima qualidade preço justo.
-                </p>
-
-                  <a href="#">
-                    <button class="botao">Sobre nós</button>
-                </a>
-            </div>
-
-        </section>
-
-
-        <!-- TERCEIRA SEÇÃO -->
-        <section class="secao secao-3">
-
-            <!-- TEXTO ESQUERDA -->
-            <div class="texto">
-                <h2>Ingredientes de Qualidade</h2>
-
-                <p>
-                    Trabalhamos com ingredientes selecionados para garantir uma pizza deliciosae e inesquecível.
-                </p>
-            </div>
-
-            <!-- IMAGEM DIREITA -->
-            <div class="midia">
-                <video controls autoplay muted loop style="pointer-events: none">
-                    <source src="imagens/156878-813735363.mp4" type="video/mp4">
-                </video>
-            </div>
-
-        </section>
-
+        <div id="lista-avaliacoes"></div>
     </main>
+
 
 
     <!-- FOOTER -->
@@ -161,6 +97,6 @@
     <!-- Importação de ícones -->
     <script src="https://kit.fontawesome.com/3814eee1f6.js" crossorigin="anonymous"></script>
     
-    <script src="js/script.js"></script>
+    <script src="js/feedback.js"></script>
 </body>
 </html>

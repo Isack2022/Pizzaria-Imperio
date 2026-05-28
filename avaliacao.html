@@ -7,13 +7,22 @@
 
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/avaliacao.css">
+    <link rel="stylesheet" href="css/carregamento.css">
     <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER -->
+
+    <!-- Div de carregamento -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Carregando...</p>
+    </div>
+
+
+     <!-- HEADER -->
     <header class="header">
 
         <!-- LOGO -->
@@ -25,6 +34,9 @@
         <div class="header-buttons">
             <a href="index.html">
                 <button><i class="fa-solid fa-house"></i> Home</button>
+            </a>
+            <a href="feedback.html">
+                <button><i class="fa-solid fa-star"></i> Feedbacks</button>
             </a>
             <a href="cardapio.html">
                 <button><i class="fa-solid fa-utensils"></i></i> Cardápio</button>

@@ -61,6 +61,17 @@ olhoSenha2.addEventListener('click', () => {
 });
 
 
+// Tela de carregamento
+const loading = document.getElementById('loading');
+function mostrarLoading(){
+    loading.style.display = 'flex';
+}
+
+function esconderLoading(){
+    loading.style.display = 'none';
+}
+
+
 // Função de login
 async function login(){
     // Verificando se os campos estão preenchidos
@@ -68,7 +79,8 @@ async function login(){
         return alert(`Todos os campos devem ser preenchidos.`);
     }
     try{
-         // Chamando api do Node.js
+        mostrarLoading();
+        // Chamando api do Node.js
         const resposta = await fetch(
             "https://node-pizzaria.onrender.com/cliente/login",
             {
@@ -101,11 +113,13 @@ async function login(){
         }else{
             txtEmailLogin.value = "";
             txtSenhaLogin.value = "";
-            alert('Usuário ou senha incorretos');
+            alert('Usuário ou senha incorretos.');
         }
     }catch(error){
        console.error(`Não foi possível requisitar a API -> ${error}`);
-       alert("Não foi possível conectar com servidor.");
+       alert("Não foi possível conectar-se ao servidor.");
+    }finally{
+        esconderLoading();
     }
 }
 
@@ -128,7 +142,8 @@ async function cadastro(){
         return alert(`As senhas não coincidem. Verifique e insira senhas iguais.`);
     }
     try{
-         // Chamando api do Node.js
+        mostrarLoading();
+        // Chamando api do Node.js
         const resposta = await fetch(
             "https://node-pizzaria.onrender.com/cliente",
             {
@@ -157,13 +172,16 @@ async function cadastro(){
             txtSenha1.value = "";
             txtSenha2.value = "";
 
-            alert("Cadastro  realizado com sucesso! ");
+            alert("Cadastro realizado com sucesso!");
         }else{
-            alert("Erro ao cadastra.");
+            alert("Erro ao cadastrar.");
         }
     }catch(error){
        console.error(`Não foi possível requisitar a API -> ${error}`);
-       alert("Não foi possível conectar com servidor.");
+       alert("Não foi possível conectar-se ao servidor.");
+    }
+    finally{
+        esconderLoading();
     }
 }
 

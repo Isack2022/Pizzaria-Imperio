@@ -1,7 +1,7 @@
 // Pegando o token 
 const token = localStorage.getItem('token');
 
-// Casp não tenha o token e vai realocar para página
+// Casp não tenha o token e vai realocar para página de login
 if(!token){
     alert('Você precisa estar logado.');
     window.location.href = 'login.html';
@@ -12,6 +12,17 @@ const formAvaliacao = document.getElementById('formAvaliacao');
 const comentario = document.getElementById('comentario');
 const estrelas = document.querySelectorAll('.estrela');
 const texto = document.getElementById('nota-text');
+
+
+// Tela de carregamento
+const loading = document.getElementById('loading');
+function mostrarLoading(){
+    loading.style.display = 'flex';
+}
+
+function esconderLoading(){
+    loading.style.display = 'none';
+}
 
 let nota = 0;
 
@@ -63,6 +74,7 @@ async function avaliacao(){
     }
 
     try{
+        mostrarLoading();
         // Chamando api do Node.js
         const resposta = await fetch(
             "https://node-pizzaria.onrender.com/avaliacao",
@@ -97,7 +109,7 @@ async function avaliacao(){
             comentario.value = "";
             atualizarEstrelas();
 
-            alert("Obrigado pela avaliação! 😁");
+            alert("Obrigado pela sua avaliação! 😁");
             window.location.replace('index.html');
         }else{
             alert('Erro ao avaliar.');
@@ -106,6 +118,8 @@ async function avaliacao(){
     }catch(error){
        console.error(`Não foi possível requisitar a API -> ${error}`);
        alert("Não foi possível conectar com servidor.");
+    }finally{
+        esconderLoading();
     }
 }
 
