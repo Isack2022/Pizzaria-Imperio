@@ -71,78 +71,28 @@ Pizzaria-Imperio/
 ├── avaliacao.html
 └── cardapio.html
 ```
-
-### API
-
-```bash
-Node-Pizzaria/
-│
-├── controller/
-├── routes/
-├── middlewares/
-├── database/
-├── app.js
-└── server.js
-```
-
 ---
+## 📷 Imagens do site
 
-## 🔐 Autenticação
+### Tela incial
+![Tela inicial](imagens/readme/Inicial.png)
 
-Após o login a API gera um token JWT.
+### Tela feedback
+![Tela feedback](imagens/readme/feedback.png)
 
-O token é armazenado no Local Storage:
+### Tela Cardápio
+![Tela Cardápio](imagens/readme/cardapio.png)
 
-```javascript
-localStorage.setItem("token", dado.token);
-```
+### Tela Login
+![Tela Cardápio](imagens/readme/login.png)
 
-As rotas protegidas exigem o envio do token:
+### Tela avaliação
+![Tela avaliação](imagens/readme/avaliacao.png)
 
-```javascript
-Authorization: Bearer TOKEN
-```
+### Mobile
+![Tela mobile](imagens/readme/mobile-1.png)
 
----
-
-## 📋 Endpoints
-
-### Cliente
-
-| Método | Rota | Descrição |
-|----------|----------|----------|
-| GET | /cliente | Lista clientes |
-| GET | /cliente/:id | Busca cliente |
-| POST | /cliente | Cadastra cliente |
-| PUT | /cliente/:id | Atualiza cliente |
-| DELETE | /cliente/:id | Remove cliente |
-| POST | /cliente/login | Realiza login |
-
-### Avaliações
-
-| Método | Rota | Descrição |
-|----------|----------|----------|
-| GET | /avaliacao | Lista avaliações |
-| GET | /avaliacao/:id | Busca avaliação |
-| POST | /avaliacao | Cria avaliação |
-| DELETE | /avaliacao/:id | Remove avaliação |
-
----
-
-## 🗄️ Banco de Dados
-
-Tabela de avaliações:
-
-```sql
-CREATE TABLE avaliacao (
-    id_avaliacao INT AUTO_INCREMENT PRIMARY KEY,
-    id_cliente INT NOT NULL,
-    estrela DECIMAL(2,1) NOT NULL,
-    comentario TEXT NOT NULL,
-    data_avaliacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
-);
-```
+![Tela mobile](imagens/readme/mobile-2.png)
 
 ---
 
